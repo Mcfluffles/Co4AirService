@@ -5,3 +5,11 @@ Add more mission Types
 	
 Add JIP functionality
 	-edit tasks so they MP properly
+	
+add check if player is at right spot rather than just deboarding the passenger anywhere
+
+rework to have server control things it needs to control :P
+
+Fix boarding/deboarding scripts, currently non working
+
+create onPlayerConnected files 

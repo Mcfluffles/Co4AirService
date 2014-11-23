@@ -9,7 +9,6 @@ class Mission
 		"ca_modules_silvie",
 		"CA_Modules_Alice",
 		"CA_Modules_Alice2",
-		"hsim_air_us_h_helicopters_medium",
 		"hsim_air_us_h_helicopters_light",
 		"united_states_h",
 		"hsim_misc_h_info_board"
@@ -21,7 +20,6 @@ class Mission
 		"hsim_functions_h",
 		"ca_modules_silvie",
 		"CA_Modules_Alice",
-		"hsim_air_us_h_helicopters_medium",
 		"hsim_air_us_h_helicopters_light",
 		"hsim_misc_h_info_board",
 		"united_states_h"
@@ -51,6 +49,7 @@ class Mission
 				{
 					position[]={27890.461,4.1480079,29776.771};
 					azimut=-294.61099;
+					special="NONE";
 					id=0;
 					side="CIV";
 					vehicle="Pilot_Random_H";
@@ -64,6 +63,7 @@ class Mission
 				{
 					position[]={27890.881,4.1999998,29774.865};
 					azimut=76.351303;
+					special="NONE";
 					id=1;
 					side="CIV";
 					vehicle="Pilot_Random_H";
@@ -76,6 +76,7 @@ class Mission
 				{
 					position[]={27891.502,4.1999998,29773.146};
 					azimut=-287.151;
+					special="NONE";
 					id=2;
 					side="CIV";
 					vehicle="Pilot_Random_H";
@@ -88,6 +89,7 @@ class Mission
 				{
 					position[]={27892.127,4.1999998,29771.684};
 					azimut=74.542;
+					special="NONE";
 					id=3;
 					side="CIV";
 					vehicle="Pilot_Random_H";
@@ -215,9 +217,9 @@ class Mission
 				class Item0
 				{
 					presence=0;
-					position[]={24545.811,-105.46818,32052.229};
+					position[]={24380.436,0.58170807,32352.986};
 					azimut=255;
-					id=13;
+					id=12;
 					side="CIV";
 					vehicle="Rocker_H";
 					leader=1;
@@ -230,34 +232,23 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=3;
+		items=2;
 		class Item0
 		{
-			position[]={27909.166,4.1192966,29776.891};
+			position[]={27909.256,4.1999998,29771.471};
 			azimut=74.542;
 			id=10;
 			side="EMPTY";
-			vehicle="Heli_Medium01_Red_H";
+			vehicle="Heli_Light01_H";
 			leader=1;
 			skill=0.60000002;
 			text="pheli1";
 		};
 		class Item1
 		{
-			position[]={27914.592,4.1999998,29759.633};
-			azimut=74.542;
-			id=11;
-			side="EMPTY";
-			vehicle="Heli_Light01_shadow_H";
-			leader=1;
-			skill=0.60000002;
-			text="pheli2";
-		};
-		class Item2
-		{
 			position[]={27893.596,4.1999998,29767.852};
 			azimut=255;
-			id=12;
+			id=11;
 			side="EMPTY";
 			vehicle="Info_Board_H";
 			skill=0.60000002;
@@ -282,7 +273,7 @@ class Mission
 		};
 		class Item2
 		{
-			position[]={35339.414,65.390213,37494.434};
+			position[]={16643.24,21.034906,52459};
 			name="sm3";
 			type="Empty";
 		};
