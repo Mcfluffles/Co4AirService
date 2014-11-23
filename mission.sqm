@@ -1,0 +1,379 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"hsim_characters_h",
+		"ca_modules_animals",
+		"hsim_functions_h",
+		"ca_modules_silvie",
+		"CA_Modules_Alice",
+		"CA_Modules_Alice2",
+		"hsim_air_us_h_helicopters_medium",
+		"hsim_air_us_h_helicopters_light",
+		"united_states_h",
+		"hsim_misc_h_info_board"
+	};
+	addOnsAuto[]=
+	{
+		"hsim_characters_h",
+		"ca_modules_animals",
+		"hsim_functions_h",
+		"ca_modules_silvie",
+		"CA_Modules_Alice",
+		"hsim_air_us_h_helicopters_medium",
+		"hsim_air_us_h_helicopters_light",
+		"hsim_misc_h_info_board",
+		"united_states_h"
+	};
+	randomSeed=15798448;
+	class Intel
+	{
+		briefingName="Air Service";
+		briefingDescription="you are a badass helicopter pilot. v1.0";
+		startWeather=0.35000002;
+		startWind=0.1;
+		forecastWeather=0.35000002;
+		forecastWind=0.1;
+		year=2013;
+		day=8;
+	};
+	class Groups
+	{
+		items=8;
+		class Item0
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={27890.461,4.1480079,29776.771};
+					azimut=-294.61099;
+					id=0;
+					side="CIV";
+					vehicle="Pilot_Random_H";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.60000002;
+					text="p1";
+					description="Pilot";
+				};
+				class Item1
+				{
+					position[]={27890.881,4.1999998,29774.865};
+					azimut=76.351303;
+					id=1;
+					side="CIV";
+					vehicle="Pilot_Random_H";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="p2";
+					description="Pilot";
+				};
+				class Item2
+				{
+					position[]={27891.502,4.1999998,29773.146};
+					azimut=-287.151;
+					id=2;
+					side="CIV";
+					vehicle="Pilot_Random_H";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="p3";
+					description="Pilot";
+				};
+				class Item3
+				{
+					position[]={27892.127,4.1999998,29771.684};
+					azimut=74.542;
+					id=3;
+					side="CIV";
+					vehicle="Pilot_Random_H";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="p4";
+					description="Pilot";
+				};
+			};
+		};
+		class Item1
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={23475.553,1.0078208,32606.182};
+					id=4;
+					side="LOGIC";
+					vehicle="BIS_animals_Logic";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item2
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={23791.873,0.74694258,32613.207};
+					id=5;
+					side="LOGIC";
+					vehicle="AmbientBoats";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item3
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={24129.283,-117.40972,32634.295};
+					id=6;
+					side="LOGIC";
+					vehicle="SilvieManager";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item4
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={24424.516,-113.34136,32564.004};
+					id=7;
+					side="LOGIC";
+					vehicle="AliceManager";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item5
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={23876.227,1.0666661,32254.711};
+					id=8;
+					side="LOGIC";
+					vehicle="AmbientHelicopters";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item6
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={24213.635,0.82718664,32233.625};
+					id=9;
+					side="LOGIC";
+					vehicle="AmbientPlanes";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item7
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					presence=0;
+					position[]={24545.811,-105.46818,32052.229};
+					azimut=255;
+					id=13;
+					side="CIV";
+					vehicle="Rocker_H";
+					leader=1;
+					skill=0.60000002;
+					text="civ1";
+					description="Pilot";
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=3;
+		class Item0
+		{
+			position[]={27909.166,4.1192966,29776.891};
+			azimut=74.542;
+			id=10;
+			side="EMPTY";
+			vehicle="Heli_Medium01_Red_H";
+			leader=1;
+			skill=0.60000002;
+			text="pheli1";
+		};
+		class Item1
+		{
+			position[]={27914.592,4.1999998,29759.633};
+			azimut=74.542;
+			id=11;
+			side="EMPTY";
+			vehicle="Heli_Light01_shadow_H";
+			leader=1;
+			skill=0.60000002;
+			text="pheli2";
+		};
+		class Item2
+		{
+			position[]={27893.596,4.1999998,29767.852};
+			azimut=255;
+			id=12;
+			side="EMPTY";
+			vehicle="Info_Board_H";
+			skill=0.60000002;
+			text="missionItem";
+			description="Pilot";
+		};
+	};
+	class Markers
+	{
+		items=6;
+		class Item0
+		{
+			position[]={33126.406,128.28078,12643.711};
+			name="sm1";
+			type="Empty";
+		};
+		class Item1
+		{
+			position[]={6870.1802,119.99423,12080.629};
+			name="sm2";
+			type="Empty";
+		};
+		class Item2
+		{
+			position[]={35339.414,65.390213,37494.434};
+			name="sm3";
+			type="Empty";
+		};
+		class Item3
+		{
+			position[]={34120.984,17.971972,36979.488};
+			name="sm4";
+			type="Empty";
+		};
+		class Item4
+		{
+			position[]={46888.074,109.02307,28934.574};
+			name="sm5";
+			type="Empty";
+		};
+		class Item5
+		{
+			position[]={27902.936,4.1549339,29725.451};
+			name="ppad";
+			text="Seattle Heli Service";
+			type="Heliport";
+			colorName="ColorBlue";
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"united_states_h"
+	};
+	addOnsAuto[]=
+	{
+		"united_states_h"
+	};
+	randomSeed=5331179;
+	class Intel
+	{
+		startWeather=0.34999999;
+		startWind=0.1;
+		forecastWeather=0.34999999;
+		forecastWind=0.1;
+		year=2013;
+		day=8;
+		hour=11;
+		minute=20;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"united_states_h"
+	};
+	addOnsAuto[]=
+	{
+		"united_states_h"
+	};
+	randomSeed=16273018;
+	class Intel
+	{
+		startWeather=0.34999999;
+		startWind=0.1;
+		forecastWeather=0.34999999;
+		forecastWind=0.1;
+		year=2013;
+		day=8;
+		hour=11;
+		minute=20;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"united_states_h"
+	};
+	addOnsAuto[]=
+	{
+		"united_states_h"
+	};
+	randomSeed=9142169;
+	class Intel
+	{
+		startWeather=0.34999999;
+		startWind=0.1;
+		forecastWeather=0.34999999;
+		forecastWind=0.1;
+		year=2013;
+		day=8;
+		hour=11;
+		minute=20;
+	};
+};

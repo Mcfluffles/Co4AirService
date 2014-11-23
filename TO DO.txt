@@ -1,0 +1,7 @@
+Add more mission Types
+	-Sling loading?
+	-S&R?
+	-Scenic Flying?
+	
+Add JIP functionality
+	-edit tasks so they MP properly
