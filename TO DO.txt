@@ -19,3 +19,5 @@ fix board/deboard
 	
 event handler for get in/out?
 
+Rework Functions to use BIS_fnc_MP
+	see https://community.bistudio.com/wiki/BIS_fnc_MP_%28Take_On_Helicopters%29
