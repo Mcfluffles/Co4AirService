@@ -235,7 +235,7 @@ class Mission
 		items=2;
 		class Item0
 		{
-			position[]={27909.256,4.1999998,29761.898};
+			position[]={27906.094,4.1999998,29765.143};
 			azimut=74.542;
 			id=10;
 			side="EMPTY";

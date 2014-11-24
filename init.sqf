@@ -1,8 +1,9 @@
 //init the briefing
 //execVM "briefing.sqf";
 
-//calls script that adds needed actions for all clients 
+//calls script that adds needed actions for all clients, first on mission start then JIP 
 execVM "playerInit.sqf";
+//onPlayerConnected
 
 
 
@@ -10,9 +11,8 @@ execVM "playerInit.sqf";
 //onPlayerConnected
 
 //compile functions
-allFunctions = compile preProccessFile "allFunctions.sqf";
-
-//add event handlers
+//allFunctions = compile preProccessFile "allFunctions.sqf";
+execVM "compileAllFunctions.sqf";
 
 //list of civilians to select from for the missions
 //call BIS_fnc_selectRandom to select from list
