@@ -10,7 +10,9 @@ execVM "playerInit.sqf";
 //onPlayerConnected
 
 //compile functions
-//myFunction = compile preProccessFile "myFunction.sqf";
+allFunctions = compile preProccessFile "allFunctions.sqf";
+
+//add event handlers
 
 //list of civilians to select from for the missions
 //call BIS_fnc_selectRandom to select from list
