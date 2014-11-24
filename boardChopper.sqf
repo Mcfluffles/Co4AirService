@@ -4,9 +4,10 @@ _unitToBoardType = _this select 3;
 //create waypoint for unit to board chopper
 switch (_unitToBoardType) do{
 	case "VIP": { //For the VIP mission
+		_waypoint = groupVIP addWaypoint[getPos pheli1, 5];
+		_waypoint setWaypointType "MOVE";
 		_waypoint = groupVIP addWaypoint[getPos pheli1, 0];
-		_waypoint attachTo[pheli1];
 		_waypoint setWaypointType "GETIN";
-		player removeAction actionID; //remove the boarding action from the player
+		player removeAction actionBoardVIP; //remove the boarding action from the player
 	}; //end case 1
 }; //end switch

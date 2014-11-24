@@ -31,24 +31,20 @@ _VIP createUnit [_spawnVIP, groupVIP];
 p1 setpos _spawnVIP;
 pheli1 setpos _spawnVIP;
 
-//global var for use in createVipTask.sqf
+//global var for use in playerConnected and player Init
 destVIP = _destVIP;
 spawnVIP = _spawnVIP;
 
 //create task for players
-//execVM "createVipTask.sqf";
-_taskTrigger = createTrigger["EmptyDetector", getPos p1];
-_taskTrigger setTriggerArea[10000, 10000, 0, false];
-_taskTrigger setTriggerActivation["CIV", "PRESENT", false];
-_taskTrigger setTriggerStatements["true", "execVM 'createVipTask.sqf'", ""];
+taskVIP = 1;
+publicVariable "taskVIP"; //triggers event handler which will add the tasks across all clients
 
 //add action to civ to move into chopper
-//array value 2 is the parameter passed to boardChopper.sqf. 
-actionID = pheli1 addAction ["Board VIP", "boardChopper.sqf", "VIP", 1.5, false, true];
+actionBvip = 1; //for use in check if the VIP action is in use for JIP players
+publicVariable "actionBvip";
 
 
 
 //add action to deboard to the choppers
-//array value 2 is the parameter passed to deboardChopper.sqf.
-actionID2 = pheli1 addAction["Disembark VIP", "deboardChopper.sqf", "VIP", 1.5, false, true];
-
+actionDBvip = 1;
+publicVariable "actionDBvip";

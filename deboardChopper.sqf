@@ -7,7 +7,8 @@ switch (_unitToDeboardType) do{
 		_waypoint = groupVIP addWaypoint[getPosATL pheli1, 0];
 		_waypoint setWaypointType "GETOUT";
 		vipTask setTaskState "Succeeded";
-		pheli1 removeAction actionId2;
+		pheli1 removeAction actionRemoveVIP;
+		actionBvip = 0;
 		sleep 10;
 	}; //end case 1
 }; //end switch

@@ -9,9 +9,9 @@ class Mission
 		"ca_modules_silvie",
 		"CA_Modules_Alice",
 		"CA_Modules_Alice2",
-		"hsim_air_us_h_helicopters_light",
 		"united_states_h",
-		"hsim_misc_h_info_board"
+		"hsim_misc_h_info_board",
+		"hsim_air_us_h_helicopters_medium"
 	};
 	addOnsAuto[]=
 	{
@@ -20,7 +20,7 @@ class Mission
 		"hsim_functions_h",
 		"ca_modules_silvie",
 		"CA_Modules_Alice",
-		"hsim_air_us_h_helicopters_light",
+		"hsim_air_us_h_helicopters_medium",
 		"hsim_misc_h_info_board",
 		"united_states_h"
 	};
@@ -28,7 +28,7 @@ class Mission
 	class Intel
 	{
 		briefingName="Air Service";
-		briefingDescription="you are a badass helicopter pilot. v1.0";
+		briefingDescription="You are a badass helicopter pilot. v1.01";
 		startWeather=0.35000002;
 		startWind=0.1;
 		forecastWeather=0.35000002;
@@ -235,11 +235,11 @@ class Mission
 		items=2;
 		class Item0
 		{
-			position[]={27909.256,4.1999998,29771.471};
+			position[]={27909.256,4.1999998,29761.898};
 			azimut=74.542;
 			id=10;
 			side="EMPTY";
-			vehicle="Heli_Light01_H";
+			vehicle="Heli_Medium01_Luxury_H";
 			leader=1;
 			skill=0.60000002;
 			text="pheli1";

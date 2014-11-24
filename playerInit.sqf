@@ -2,6 +2,10 @@ waitUntil {!isNull player};
 
 scopeName "main";
 
+actionBvip = 0;
+actionDBvip = 0;
+taskVIP = 0;
+
 if(!isServer) then { //Action menu for whiteboard, check if not the server (i.e. a client) and then if so execute the following
 	fnc_addActionToMissionBoard = {
 		missionItem addAction["Transport VIP", "missionVIP.sqf"];
