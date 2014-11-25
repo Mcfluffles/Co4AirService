@@ -3,7 +3,10 @@
 
 //calls script that adds needed actions for all clients, first on mission start and for JIP 
 //[[[],"playerInit.sqf"], "BIS_fnc_execVM", nil, false, true] call BIS_fnc_MP;
-execVM "playerInit.sqf";
+//execVM "playerInit.sqf";
+
+//["", "AS_fnc_addActionsToMissionBoards"] call BIS_fnc_MP;
+call AS_fnc_addActionsToMissionBoards;
 
 
 //list of civilians to select from for the missions

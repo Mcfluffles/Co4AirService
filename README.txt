@@ -21,6 +21,8 @@ playerConnected.sqf now deprecated and removed
 
 v1.03
 actionBoardVIP.sqf and actionDeboardVIP.sqf deprecated and removed
+functions added to CfgClasses in Description.ext - now executing properly! At least for initiating client.
+compileAllFunctions.sqf deprecated and removed
 
 =============
 Co4Airservice

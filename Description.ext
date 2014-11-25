@@ -1,0 +1,15 @@
+class CfgFunctions
+{
+	class AS
+	{
+		class addActions
+		{
+			class addActionsToMissionBoards {file = "addActions\actionMissionBoards.sqf";};
+		};
+		
+		class createTasks
+		{
+			class createTaskVIP {file = "addTasks\createTaskVIP.sqf";};
+		};
+	};
+};
