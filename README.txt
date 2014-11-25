@@ -19,5 +19,8 @@ added playerInit.sqf, now for JIP and mission start
 createVipTask.sqf now deprecated and removed
 playerConnected.sqf now deprecated and removed
 
+v1.03
+actionBoardVIP.sqf and actionDeboardVIP.sqf deprecated and removed
+
 =============
 Co4Airservice

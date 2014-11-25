@@ -28,7 +28,7 @@ class Mission
 	class Intel
 	{
 		briefingName="Air Service";
-		briefingDescription="You are a badass helicopter pilot. v1.01";
+		briefingDescription="You are a badass helicopter pilot. v1.03";
 		startWeather=0.35000002;
 		startWind=0.1;
 		forecastWeather=0.35000002;
@@ -232,7 +232,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=2;
+		items=7;
 		class Item0
 		{
 			position[]={27906.094,4.1999998,29765.143};
@@ -253,6 +253,61 @@ class Mission
 			vehicle="Info_Board_H";
 			skill=0.60000002;
 			text="missionItem";
+			description="Pilot";
+		};
+		class Item2
+		{
+			position[]={33124.23,128.44138,12647.33};
+			azimut=255;
+			id=13;
+			side="EMPTY";
+			vehicle="Info_Board_H";
+			skill=0.60000002;
+			text="missionItem2";
+			description="Pilot";
+		};
+		class Item3
+		{
+			position[]={46885.945,109.22432,28946.426};
+			azimut=255;
+			id=14;
+			side="EMPTY";
+			vehicle="Info_Board_H";
+			skill=0.60000002;
+			text="missionItem3";
+			description="Pilot";
+		};
+		class Item4
+		{
+			position[]={34120.914,17.981152,36982.93};
+			azimut=255;
+			id=15;
+			side="EMPTY";
+			vehicle="Info_Board_H";
+			skill=0.60000002;
+			text="missionItem4";
+			description="Pilot";
+		};
+		class Item5
+		{
+			position[]={16644.889,21,52465.059};
+			azimut=255;
+			id=16;
+			side="EMPTY";
+			vehicle="Info_Board_H";
+			skill=0.60000002;
+			text="missionItem5";
+			description="Pilot";
+		};
+		class Item6
+		{
+			position[]={6867.1553,120,12078.215};
+			azimut=255;
+			id=17;
+			side="EMPTY";
+			vehicle="Info_Board_H";
+			skill=0.60000002;
+			text="missionItem6";
 			description="Pilot";
 		};
 	};

@@ -8,6 +8,5 @@ switch (_unitToBoardType) do{
 		_waypoint setWaypointType "MOVE";
 		_waypoint = groupVIP addWaypoint[getPos pheli1, 0];
 		_waypoint setWaypointType "GETIN";
-		player removeAction actionBoardVIP; //remove the boarding action from the player
 	}; //end case 1
 }; //end switch

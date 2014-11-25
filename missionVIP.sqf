@@ -31,21 +31,8 @@ _VIP createUnit [_spawnVIP, groupVIP];
 p1 setpos _spawnVIP;
 pheli1 setpos [(_spawnVIP select 0) - 5, _spawnVIP select 1, _spawnVIP select 2];
 
-//global var for use in playerConnected and player Init
-destVIP = _destVIP;
-spawnVIP = _spawnVIP;
-
 //create task for players
-taskVIP = 1;
-publicVariable "taskVIP"; //triggers event handler which will add the tasks across all clients
-call AS_fnc_createTaskVIP;
-
-//add action to civ to move into chopper
-actionBvip = 1; //for use in check if the VIP action is in use for JIP players
-publicVariable "actionBvip"; //executes ON ALL CLIENTS BUT THE ONE WHO SENDS THE BROADCAST (which I didnt figure out for a bit, causing headaches! lol), there fore whoever clicks this script will not see the results of using this command so...
-call AS_fnc_addActionToBoardVIP; //we call it directly and the client who sends the broadcast gets it as well in theory
+//[_spawnVIP, "AS_fnc_createTaskVIP"] call BIS_fnc_MP;
 
 
-//add action to deboard to the choppers
-actionDBvip = 1;
-publicVariable "actionDBvip";
+unitToBoardType = "VIP"; //set global var which is used in the board/deboard scripts
