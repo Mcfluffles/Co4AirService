@@ -13,8 +13,5 @@ rework to have server control things it needs to control :P
 Fix boarding/deboarding scripts, currently non working
 
 event handler for get in/out?
-
-Rework Functions to use BIS_fnc_MP
-	see https://community.bistudio.com/wiki/BIS_fnc_MP_%28Take_On_Helicopters%29
 	
-perhaps define functions in CfgFunctions and use a publicVariable event Handler to broadcast as BIS_fnc_MP is not working correctly or I am just usign it wrong lol
+perhaps define functions in CfgFunctions and use a publicVariable event Handler to broadcast as BIS_fnc_MP is not working correctly and seems to be broken
