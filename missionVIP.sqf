@@ -1,3 +1,8 @@
+//check if VIP mission already active
+if(activeMissionVIP == 1) exitWith { hint "You must finish the current VIP mission before creating another!"};
+activeMissionVIP = 1;
+publicVariable "activeMissionVIP";
+
 //set scopeName for breakto in the while loop
 scopeName "main";
 
@@ -26,29 +31,12 @@ _destVIP = getMarkerPos _spawnLocation;
 
 //spawn civ to be picked up, and create the group he will be in
 groupVIP = createGroup civilian;
+publicVariable "groupVIP";
 _VIP createUnit [_spawnVIP, groupVIP];
 
-p1 setpos _spawnVIP;
-pheli1 setpos _spawnVIP;
-
-//global var for use in createVipTask.sqf
-destVIP = _destVIP;
-spawnVIP = _spawnVIP;
+//p1 setpos _spawnVIP; //for testing purposes
+//pheli1 setpos [(_spawnVIP select 0) - 5, _spawnVIP select 1, _spawnVIP select 2];
 
 //create task for players
-//execVM "createVipTask.sqf";
-_taskTrigger = createTrigger["EmptyDetector", getPos p1];
-_taskTrigger setTriggerArea[10000, 10000, 0, false];
-_taskTrigger setTriggerActivation["CIV", "PRESENT", false];
-_taskTrigger setTriggerStatements["true", "execVM 'createVipTask.sqf'", ""];
-
-//add action to civ to move into chopper
-//array value 2 is the parameter passed to boardChopper.sqf. 
-actionID = pheli1 addAction ["Board VIP", "boardChopper.sqf", "VIP", 1.5, false, true];
-
-
-
-//add action to deboard to the choppers
-//array value 2 is the parameter passed to deboardChopper.sqf.
-actionID2 = pheli1 addAction["Disembark VIP", "deboardChopper.sqf", "VIP", 1.5, false, true];
-
+[[_spawnVIP], "AS_fnc_createTaskVIP"] call BIS_fnc_MP;
+//[_spawnVIP] call AS_fnc_createTaskVIP;

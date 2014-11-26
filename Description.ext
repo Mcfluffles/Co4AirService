@@ -1,0 +1,21 @@
+class CfgFunctions
+{
+	class AS
+	{
+		class addActions
+		{
+			class addActionsToMissionBoards {file = "addActions\actionMissionBoards.sqf";};
+		};
+		
+		class createTasks
+		{
+			class createTaskVIP {file = "addTasks\createTaskVIP.sqf";};
+		};
+		
+		class boardingActions
+		{
+			class boardPassengers {file = "addActions\actionBoardChopper.sqf";};
+			class deboardVIP {file = "functions\deboardVIP.sqf";};
+		};
+	};
+};
