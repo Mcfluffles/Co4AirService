@@ -29,5 +29,10 @@ boardChopper.sqf/deboardChopper.sqf now addActions\actionBoardChopper.sqf && add
 JIP Not Supported Yet
 Hopefully the final pre v1.1 commit, but I expect at least one more. 
 
+v1.1
+Mission Playable SP/MP
+No JIP
+Small bug fixes
+
 =============
 Co4Airservice

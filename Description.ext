@@ -15,6 +15,7 @@ class CfgFunctions
 		class boardingActions
 		{
 			class boardPassengers {file = "addActions\actionBoardChopper.sqf";};
+			class deboardVIP {file = "functions\deboardVIP.sqf";};
 		};
 	};
 };

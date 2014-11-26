@@ -1,3 +1,8 @@
+//check if VIP mission already active
+if(activeMissionVIP == 1) exitWith { hint "You must finish the current VIP mission before creating another!"};
+activeMissionVIP = 1;
+publicVariable "activeMissionVIP";
+
 //set scopeName for breakto in the while loop
 scopeName "main";
 

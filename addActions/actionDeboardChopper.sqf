@@ -7,8 +7,7 @@ switch (_unitToDeboardType) do{
 	case "VIP": { //For the VIP mission
 		units groupVIP orderGetIn false; //move unit out of chopper
 		{unassignVehicle _x;} forEach units groupVIP;
-		vipTask setTaskState "Succeeded";
-		hint "VIP delivered";
+		[[], "AS_fnc_deboardVIP"] call BIS_fnc_MP; //call func to set mission success for all players and reset the active mission var
 		sleep 30;
 		{deleteVehicle _x;} forEach units groupVIP; //wait 30s and then delete the VIP and group, to prevent missionVIP.sqf from spawning them over and over
 		deleteGroup groupVIP;

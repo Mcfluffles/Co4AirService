@@ -7,5 +7,6 @@ switch (_unitToBoardType) do{
 	case "VIP": { //For the VIP mission
 		{_x assignAsCargo pheli1;} forEach units groupVIP; //assign VIP to back seat and then move him in
 		units groupVIP orderGetIn true;
+		[[], "AS_fnc_boardVIP"] call BIS_fnc_MP;
 	}; //end case 1
 }; //end switch
