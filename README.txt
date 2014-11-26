@@ -24,5 +24,10 @@ actionBoardVIP.sqf and actionDeboardVIP.sqf deprecated and removed
 functions added to CfgClasses in Description.ext - now executing properly! At least for initiating client.
 compileAllFunctions.sqf deprecated and removed
 
+v1.04
+boardChopper.sqf/deboardChopper.sqf now addActions\actionBoardChopper.sqf && addActions\actionDeboardChopper.sqf -fixed and working :)
+JIP Not Supported Yet
+Hopefully the final pre v1.1 commit, but I expect at least one more. 
+
 =============
 Co4Airservice

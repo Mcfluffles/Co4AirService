@@ -29,13 +29,9 @@ groupVIP = createGroup civilian;
 publicVariable "groupVIP";
 _VIP createUnit [_spawnVIP, groupVIP];
 
-p1 setpos _spawnVIP; //for testing purposes
-pheli1 setpos [(_spawnVIP select 0) - 5, _spawnVIP select 1, _spawnVIP select 2];
+//p1 setpos _spawnVIP; //for testing purposes
+//pheli1 setpos [(_spawnVIP select 0) - 5, _spawnVIP select 1, _spawnVIP select 2];
 
 //create task for players
-//[_spawnVIP, "AS_fnc_createTaskVIP"] call BIS_fnc_MP;
-[_spawnVIP] call AS_fnc_createTaskVIP;
-
-//set global var which is used in the board/deboard scripts
-unitToBoardType = "VIP";
-publicVariable  "unitToBoardType"; 
+[[_spawnVIP], "AS_fnc_createTaskVIP"] call BIS_fnc_MP;
+//[_spawnVIP] call AS_fnc_createTaskVIP;

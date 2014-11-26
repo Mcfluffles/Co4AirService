@@ -11,5 +11,10 @@ class CfgFunctions
 		{
 			class createTaskVIP {file = "addTasks\createTaskVIP.sqf";};
 		};
+		
+		class boardingActions
+		{
+			class boardPassengers {file = "addActions\actionBoardChopper.sqf";};
+		};
 	};
 };

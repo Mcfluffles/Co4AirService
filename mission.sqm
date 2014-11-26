@@ -28,7 +28,7 @@ class Mission
 	class Intel
 	{
 		briefingName="Air Service";
-		briefingDescription="You are a badass helicopter pilot. v1.03";
+		briefingDescription="You are a badass helicopter pilot. v1.04";
 		startWeather=0.35000002;
 		startWind=0.1;
 		forecastWeather=0.35000002;
@@ -232,7 +232,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=7;
+		items=8;
 		class Item0
 		{
 			position[]={27906.094,4.1999998,29765.143};
@@ -257,7 +257,7 @@ class Mission
 		};
 		class Item2
 		{
-			position[]={33124.23,128.44138,12647.33};
+			position[]={51729.82,179.2384,5001.7393};
 			azimut=255;
 			id=13;
 			side="EMPTY";
@@ -310,13 +310,24 @@ class Mission
 			text="missionItem6";
 			description="Pilot";
 		};
+		class Item7
+		{
+			position[]={33115.258,128.62628,12653.245};
+			azimut=255;
+			id=18;
+			side="EMPTY";
+			vehicle="Info_Board_H";
+			skill=0.60000002;
+			text="missionItem7";
+			description="Pilot";
+		};
 	};
 	class Markers
 	{
-		items=6;
+		items=7;
 		class Item0
 		{
-			position[]={33126.406,128.28078,12643.711};
+			position[]={51732.488,179.34999,5004.0088};
 			name="sm1";
 			type="Empty";
 		};
@@ -351,6 +362,13 @@ class Mission
 			text="Seattle Heli Service";
 			type="Heliport";
 			colorName="ColorBlue";
+		};
+		class Item6
+		{
+			position[]={33117.008,128.56827,12650.307};
+			name="dopoint";
+			text="Drop Off Point";
+			type="hd_dot";
 		};
 	};
 };
